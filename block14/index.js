@@ -1,3 +1,7 @@
+console.log("----------------------------------------------")
+console.log("-----------------FizzBuzz----------------------")
+
+// Declaring the arrays
 const array1 = [2,4,6,8,11,20,15,22];
 const array2 = [1,2,3,4,5,6,7,8,9,10];
 const array3 = [70,42,55,81,21,91,34];
@@ -7,6 +11,7 @@ const odd2 = []
 const odd3 = []
 const odd4 = []
 let z = 0;
+// In each array to get only odd numbers
 for (let i = 0; i < array1.length; i++) {
     if (array1[i] % 2 !==0) {
         odd1 [z] = array1 [i];
@@ -42,9 +47,8 @@ for (let i = 0; i < array4.length; i++) {
 }
 console.log ("array4", array4);
 console.log ("only odds", odd4);
-console.log('************************************************')
-console.log('************* VOWELS VS CONSONANTS ************')
-
+console.log("------------------------------------------------")
+console.log("---------------VOWELS VS CONSONANTS -------------")
 /* 
 Create a JavaScript code that accepts a string of lowercase letters. Print the word followed by how many consonants and vowels it has.
 
@@ -90,8 +94,8 @@ for (let i=0; i < vowelConsonantInput.length; i++) {
 console.log(
     `${vowelConsonantInput} has ${consonantCount} consonants and ${vowelCount} vowels`
 );
-console.log ('********************************************')
-console.log('************* REVERSE ARRAY ************')
+console.log ("-----------------------------------------")
+console.log("-----------------REVERSE ARRAY---------------")
 
 const originalarray = [1, -1, 2, -3, 5,-8, 13];
 
@@ -100,17 +104,21 @@ console.log('originalarray', originalarray);
 const reversedarray = originalarray.reverse();
 console.log('reversedarray', reversedarray);
 // showing reversed array 
-console.log ('********************************************')
-console.log('************* FizzBuzz ***************************')
+console.log("----------------------------------------------")
+console.log("-----------------FizzBuzz----------------------")
 
+// Numbers from 1 to 100
 for (let i=1; i <= 100;i++){
-    if (i % 3 == 0) {
+// Printing Fizz for each multiple of 3
+    if (i % 3 === 0) {
         console.log("Fizz");
      }
-    if (i % 5 == 0) {
+// Printing Fizz for each multiple of 5
+    if (i % 5 === 0) {
         console.log("Buzz");
      }
-    if (i % 3 == 0 && i % 5 == 0) {
+// Printing Fizz for each multiple of 3 and 5
+    if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz");
      }
     else if (i) { 
