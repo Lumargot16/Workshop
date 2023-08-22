@@ -74,7 +74,7 @@ if (numX >= 5 && numY >= 5) {
  let param1B = false
  let param2A = "horse"
  let param2B = "horse"
-
+// using if/else statements and strict equality operators for one truthy set of parameters 
  if (param1A === param1B || param2A === param2B) {
     console.log(true);
  }
